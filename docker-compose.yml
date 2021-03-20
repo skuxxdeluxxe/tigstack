@@ -19,7 +19,8 @@ services:
       - influxdb
     volumes:
       - ./datasources:/etc/grafana/provisioning/datasources
-      - ./dashboards:/etc/grafana/provisioning/dashboards
+      - ./dashboards/VmMetricsDashboard.yaml:/etc/grafana/provisioning/dashboards/VmMetricsDashboard.yaml
+      - ./dashboards/GrafanaDashBoard.json:/var/lib/grafana/dashboards/GrafanaDashBoard.json
     restart: always
 
   telegraf:
