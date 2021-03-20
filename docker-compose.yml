@@ -9,3 +9,12 @@ services:
     volumes:
       - ./influxdb:/var/lib/influxdb
     restart: always
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:4.3.2
+    ports:
+      - "3000:3000"
+    links:
+      - influxdb
+    restart: always
