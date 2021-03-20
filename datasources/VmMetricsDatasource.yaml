@@ -1,0 +1,6 @@
+datasources:
+  - name: VmMetrics
+    type: influxdb
+    access: proxy
+    database: vm_metrics
+    url: http://192.168.33.10:8086
