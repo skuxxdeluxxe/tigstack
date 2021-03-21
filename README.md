@@ -1,5 +1,25 @@
 # TIG Stack
 
-* Telegraf 1.3.3
-* Influxdb 1.0.2
-* Grafana 4.3.2
+The combination of Telegraf, Influxdb and Grafana to be provisioned on a VM to be the monitering service
+
+* Telegraf 
+* Influxdb 
+* Grafana 
+
+## Prerequisites
+
+* VM Running locally or running in the cloud
+* Docker
+
+## How to deploy
+
+Clone the repository
+```
+git clone https://github.com/skuxxdeluxxe/tigstack.git
+```
+
+Go into the directory and run docker compose
+```
+cd tigstack
+sudo docker-compose up -d
+```
